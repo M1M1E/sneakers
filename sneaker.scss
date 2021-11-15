@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@300;400&display=swap');
+
+
+body{
+    background-color: rgb(250, 223, 223);
+    .container{
+        position: relative;
+        background: linear-gradient(rgb(255,105,180), rgb(255,192,203));
+        height: 70vh;
+        width: 400px;
+        border-radius: 14px 14px 0 0;
+        left: 50%;
+        transform: translate(-50%,20px);
+        display: block;
+        header{
+            display: flex;
+            .logo{
+                width: 50px;
+                height: 20px;
+                padding-top: 25px;
+                padding-left: 30px;
+            }
+            p{
+                color: white;
+                padding-left: 250px;
+                font-size: 20px;
+                font-family: 'poppins';
+            }
+        }
+        h1{
+            color: white;
+            font-family: 'poppins';
+            padding-left: 30px;
+        }
+        p{
+            color: white;
+            font-family: 'poppins';
+            padding-left: 30px;
+            width: 90%;
+        }
+        .sneakers{
+            //rotation de l'image
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1) rotate(-30deg);
+            position: absolute;
+            z-index: 100;
+            bottom: 0;
+            height: 40%;
+            margin-left: 45%;
+        }
+    }
+    footer{
+        margin-top: 200px;
+        background-color: white;
+        height: 20vh;
+        width: 400px;
+        border-radius: 0 0 14px 14px;
+        button{
+            color: #DB0073;
+            font-family: 'poppins';
+            font-size: 18px;
+            text-decoration: none;
+            background-color: white;
+            border-radius: 15px;
+            border:1px solid #DB0073;
+            width: 200px;
+            height: 50px;
+            top: 50px;
+            left: 50%;
+            transform: translate(50% , 50%);
+            box-shadow: 2px 2px  pink;
+            &:hover{
+                background-color: pink;
+                color: white;
+                transition: 350ms;
+            }
+        }
+    }
+}
